@@ -1,0 +1,55 @@
+.bag {
+  height: calc(100vh - 70px);
+  display: flex;
+}
+
+.bagMenu {
+  flex: 3;
+}
+
+.bagTitle {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.bagMenuWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bagCenter {
+  align-items: center;
+  flex: 5;
+}
+.bagCenterContainer {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bagRight {
+  flex: 3;
+  align-items: right;
+}
+
+.bagMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+}
+
+.addDiscButton {
+
+}
+
+.bagMenuPutter {
+  background-color: aquamarine;
+}
+.bagMenuHeader {
+  font-weight: 500;
+  font-size: 20px;
+}

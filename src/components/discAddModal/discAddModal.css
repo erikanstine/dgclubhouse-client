@@ -1,0 +1,81 @@
+.discAddModal {
+  width: 60vw;
+  height: 240px;
+  top: 20%;
+  left: 20%;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  object-fit: cover;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.modalTitleText {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px;
+  height: 80%;
+}
+
+.addDiscButton {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.discAddWrapper {
+  align-items: center;
+}
+
+.discAddModalTop {
+  background-color: #004225;
+  padding: 5px;
+  width: calc(100% -5px);
+}
+
+.modalTopIcon {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.addDiscForm {
+  padding-top: 10px;
+}
+
+.discAddInput {
+  border: none;
+  align-self: center;
+}
+
+.discAddButton {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+.subheader {
+  font-weight: 100;
+}
+
+.discInfoKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
