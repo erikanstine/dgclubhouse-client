@@ -25,7 +25,9 @@ export default function Topbar() {
       <div className='topbarRight'>
         <div className='topbarLinks'>
           <span className='topbarLink'>Home</span>
-          <span className='topbarLink'>Bag</span>
+          <Link to="/bag" className='topbarItemLink'>
+            <span className='topbarLink'>Bag</span>
+          </Link>
           <span className='topbarLink'>Clubs</span>
         </div>
         <div className='topbarIcons'>

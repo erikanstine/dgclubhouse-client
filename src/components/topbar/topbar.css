@@ -74,6 +74,8 @@
   color: white;
 }
 
+.topbarItemLink,
+.topbarItemLink:visited,
 .topbarIconItemLink,
 .topbarIconItemLink:visited {
   color: white;

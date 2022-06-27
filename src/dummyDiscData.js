@@ -90,4 +90,17 @@ export const Discs = [
     fade: 1,
     tag: 'putter',
   },
+  {
+    id: 1,
+    discImage: 'discs/8.jpeg',
+    brand: 'Innova',
+    name: 'Roc',
+    plastic: 'DX',
+    weight: 175,
+    speed: 4,
+    glide: 4,
+    turn: "0",
+    fade: 3,
+    tag: 'midrange',
+  },
 ];
