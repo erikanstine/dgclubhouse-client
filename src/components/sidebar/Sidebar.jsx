@@ -11,10 +11,21 @@ import {
   RssFeed,
 } from '@mui/icons-material';
 import { Users } from '../../dummyData';
-import Friend from '../friend/Friend';
 import { Link } from 'react-router-dom';
+import FriendSubmenu from './submenu/FriendSubmenu';
+import BagSubmenu from './submenu/BagSubmenu';
 
-export default function Sidebar() {
+
+export default function Sidebar({submenu}) {
+  function getSubmenu(submenu, params) {
+    switch(submenu) {
+      case "bag":
+        return <BagSubmenu {...params}/>;
+      default:
+        return <FriendSubmenu users={params}/>
+    };
+  };
+
   return (
     <div className='sidebar'>
       <div className='sidebarWrapper'>
@@ -59,11 +70,7 @@ export default function Sidebar() {
         </ul>
         <button className='sidebarButton'>Show More</button>
         <hr className='sidebarHr' />
-        <ul className='sidebarFriendList'>
-          {Users.map((u) => (
-            <Friend key={u.id} user={u} />
-          ))}
-        </ul>
+        {getSubmenu(submenu, Users)}
       </div>
     </div>
   );
