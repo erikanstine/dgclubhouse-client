@@ -1,0 +1,22 @@
+.roundsContainer {
+  height: calc(100vh - 70px);
+  display: flex;
+  width: 100%;
+}
+
+.roundsCenter {
+  align-items: center;
+  flex: 8;
+}
+
+.roundsTitle {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.roundsListContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
