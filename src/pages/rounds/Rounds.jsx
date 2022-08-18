@@ -10,7 +10,7 @@ export default function Rounds() {
     <>
       <Topbar />
       <div className='roundsContainer'>
-        <Sidebar submenu='rounds' />
+        <Sidebar submenu='rounds' params={dummyRounds} />
         <div className='roundsCenter'>
           <div className='roundsTitle'>Your rounds</div>
           <div className='roundsListContainer'>
