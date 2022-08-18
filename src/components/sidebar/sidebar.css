@@ -63,3 +63,7 @@
   margin: 0i;
   list-style: none;
 }
+
+.disable {
+  color: grey;
+}

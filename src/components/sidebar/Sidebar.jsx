@@ -1,13 +1,14 @@
 import React from 'react';
 import './sidebar.css';
 import {
+  Assessment,
   Backpack,
+  CalendarViewMonth,
   EmojiPeople,
   EmojiEvents,
   Groups,
   GolfCourse,
   RssFeed,
-  Assessment,
 } from '@mui/icons-material';
 import { Users } from '../../dummyData';
 import Friend from '../friend/Friend';
@@ -29,22 +30,29 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className='sidebarListItem'>
-            <GolfCourse className='sidebarIcon' />
-            <span className='sidebarListItemText'>Courses</span>
+            <Link className='sidebarListItemLink' to='/rounds'>
+              <CalendarViewMonth className='sidebarIcon'/>
+              <span className="sidevarListItemText">Rounds</span>
+            </Link>
           </li>
           <li className='sidebarListItem'>
+            <GolfCourse className='sidebarIcon' />
+            <span className='sidebarListItemText disable'>Courses</span>
+          </li>
+          {/* Items below disabled */}
+          <li className='sidebarListItem disable'>
             <EmojiPeople className='sidebarIcon' />
             <span className='sidebarListItemText'>Friends</span>
           </li>
-          <li className='sidebarListItem'>
+          <li className='sidebarListItem disable'>
             <EmojiEvents className='sidebarIcon' />
             <span className='sidebarListItemText'>Tournaments</span>
           </li>
-          <li className='sidebarListItem'>
+          <li className='sidebarListItem disable'>
             <Groups className='sidebarIcon' />
             <span className='sidebarListItemText'>Clubs</span>
           </li>
-          <li className='sidebarListItem'>
+          <li className='sidebarListItem disable'>
             <Assessment className='sidebarIcon' />
             <span className='sidebarListItemText'>DiscFinder</span>
           </li>
