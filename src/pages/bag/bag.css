@@ -1,16 +1,13 @@
-.bag {
+.bagPageContainer {
   height: calc(100vh - 70px);
   display: flex;
-}
-
-.bagMenu {
-  flex: 3;
+  width: 100%;
 }
 
 .bagTitle {
     font-size: 24px;
     font-weight: 500;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .bagMenuWrapper {

@@ -12,6 +12,7 @@ import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
 import Messenger from './pages/messenger/Messenger';
 import Bag from './pages/bag/Bag';
+import Rounds from './pages/rounds/Rounds';
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path='/profile/:username' element={<Profile />} />
         <Route path='/bag' element={user ? <Bag /> : <Login />} />
+        <Route path='/rounds' element={user ? <Rounds /> : <Register/>} />
       </Routes>
     </Router>
   );

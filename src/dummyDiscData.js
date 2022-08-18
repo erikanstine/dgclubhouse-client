@@ -91,7 +91,7 @@ export const Discs = [
     tag: 'putter',
   },
   {
-    id: 1,
+    id: 8,
     discImage: 'discs/8.jpeg',
     brand: 'Innova',
     name: 'Roc',
@@ -102,5 +102,32 @@ export const Discs = [
     turn: "0",
     fade: 3,
     tag: 'midrange',
+  },
+];
+
+export const Rounds = [
+  {
+    id: 1,
+    score: 54,
+    date: '01/01/2022',
+    courseName: 'Maple Hill',
+  },
+  {
+    id: 2,
+    score: 53,
+    date: '02/14/2022',
+    courseName: 'Maple Hill',
+  },
+  {
+    id: 3,
+    score: 63,
+    date: '05/14/2022',
+    courseName: 'Maple Hill',
+  },
+  {
+    id: 4,
+    score: 50,
+    date: '08/14/2022',
+    courseName: 'FDR',
   },
 ];

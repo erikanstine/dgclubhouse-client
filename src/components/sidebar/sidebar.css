@@ -1,5 +1,5 @@
 .sidebar {
-  flex: 4;
+  flex: 3;
   height: calc(100vh - 50px);
   background-color: azure;
   overflow-y: scroll;
@@ -58,7 +58,7 @@
   margin: 20px 0;
 }
 
-.sidebarFriendList {
+.sidebarSubmenu {
   padding: 0;
   margin: 0i;
   list-style: none;
