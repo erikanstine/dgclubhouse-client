@@ -14,6 +14,7 @@ import { Users } from '../../dummyData';
 import { Link } from 'react-router-dom';
 import FriendSubmenu from './submenu/FriendSubmenu';
 import BagSubmenu from './submenu/BagSubmenu';
+import RoundSubmenu from './submenu/RoundSubmenu';
 
 
 export default function Sidebar({submenu}) {
@@ -21,6 +22,9 @@ export default function Sidebar({submenu}) {
     switch(submenu) {
       case "bag":
         return <BagSubmenu {...params}/>;
+    {/* Looks like params aren't reset per-call, will prob need to do state or smth*/}
+      case "rounds":
+        return <RoundSubmenu rounds={params}/>;
       default:
         return <FriendSubmenu users={params}/>
     };
@@ -30,14 +34,10 @@ export default function Sidebar({submenu}) {
     <div className='sidebar'>
       <div className='sidebarWrapper'>
         <ul className='sidebarList'>
-          <li className='sidebarListItem disable'>
-            <RssFeed className='sidebarIcon' />
-            <span className='sidebarListItemText'>Feed</span>
-          </li>
           <li className='sidebarListItem'>
             <Link className='sidebarListItemLink' to='/bag'>
               <Backpack className='sidebarIcon' />
-              <span className='sidebarListItemText'>Your Bag</span>
+              <span className='sidebarListItemText'>Bag</span>
             </Link>
           </li>
           <li className='sidebarListItem'>
@@ -46,11 +46,15 @@ export default function Sidebar({submenu}) {
               <span className="sidevarListItemText">Rounds</span>
             </Link>
           </li>
-          <li className='sidebarListItem'>
-            <GolfCourse className='sidebarIcon' />
-            <span className='sidebarListItemText disable'>Courses</span>
-          </li>
           {/* Items below disabled */}
+          <li className='sidebarListItem disable'>
+            <GolfCourse className='sidebarIcon' />
+            <span className='sidebarListItemText'>Courses</span>
+          </li>
+          <li className='sidebarListItem disable'>
+            <RssFeed className='sidebarIcon' />
+            <span className='sidebarListItemText'>Feed</span>
+          </li>
           <li className='sidebarListItem disable'>
             <EmojiPeople className='sidebarIcon' />
             <span className='sidebarListItemText'>Friends</span>
